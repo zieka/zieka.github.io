@@ -78,7 +78,7 @@ body {
 
 /* RESPONSIVE CSS HACKS
  -------------------------------------------------- */
- @media (max-width: 768px) {
+ @media (max-width: 414px) {
   #main {
     margin-top: 5px;
   }
