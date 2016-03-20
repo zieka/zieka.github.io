@@ -75,7 +75,10 @@ body {
     width: 100%;
 }
 
-
+.picture video {
+    height: auto;
+    width: 100%;
+}
 /* RESPONSIVE CSS HACKS
  -------------------------------------------------- */
  @media (max-width: 414px) {
