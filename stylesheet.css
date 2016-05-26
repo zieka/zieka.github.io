@@ -5,6 +5,14 @@ body {
   background-color: white;
 }
 
+.padded-5 {
+  padding: 5px;
+}
+
+.indented {
+  padding-left: 10px;
+}
+
 .container {
   margin-top: 20px;
 }
@@ -13,14 +21,11 @@ body {
   margin-left: 2%;
 }
 
-#main {
+.main {
   margin-bottom: 30px;
 }
 
-#items {
-}
-
-#items .item {
+.row-fluid .item {
     -moz-border-bottom-colors: none;
     -moz-border-left-colors: none;
     -moz-border-right-colors: none;
@@ -34,21 +39,21 @@ body {
     float: left;
 }
 
-#items .item .item-content {
+.row-fluid .item .item-content {
   padding: 10px;
 }
 
-#items .item .picture .description {
+.row-fluid .item .picture .description {
     margin-top: 10px;
 }
 
-#items .item .meta span {
-    font-size: 12px !important;
-    line-height: 16px !important;
+.row-fluid .item .meta span {
+    font-size: 12px;
+    line-height: 16px;
     margin-right: 10px;
 }
 
-#items .item .picture {
+.row-fluid .item .picture {
     display: block;
     position: relative;
     z-index: 5;
@@ -56,14 +61,14 @@ body {
     border-radius: 4px 4px 4px 4px;
 }
 
-#items .item .picture a.image {
+.row-fluid .item .picture .image {
     display: block;
     height: auto;
     width: 100%;
 }
 
-#items .item .picture img {
-    border-radius: 2px 2px 0px 0px;
+.row-fluid .item .picture img {
+    border-radius: 2px 2px 0 0;
     height: auto;
     position: relative;
     width: 100%;
@@ -81,11 +86,11 @@ body {
 }
 /* RESPONSIVE CSS HACKS
  -------------------------------------------------- */
- @media (max-width: 414px) {
-  #main {
+ @media (max-width: 620px) {
+  .main {
     margin-top: 5px;
   }
-  #items .item {
+  .row-fluid .item {
     width: 94%;
   }
 }
