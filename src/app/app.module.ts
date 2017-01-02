@@ -7,13 +7,15 @@ import { AppComponent } from './app.component';
 import { AboutMeComponent } from './about-me/about-me.component';
 import { EducationComponent } from './education/education.component';
 import { ExperienceComponent } from './experience/experience.component';
+import { CertificationsComponent } from './certifications/certifications.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     AboutMeComponent,
     EducationComponent,
-    ExperienceComponent
+    ExperienceComponent,
+    CertificationsComponent
   ],
   imports: [
     BrowserModule,
