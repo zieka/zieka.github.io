@@ -11,6 +11,7 @@ import { CertificationsComponent } from './certifications/certifications.compone
 import { PublicationsComponent } from './publications/publications.component';
 import { FavoriteToolsComponent } from './favorite-tools/favorite-tools.component';
 import { FavoriteLanguagesComponent } from './favorite-languages/favorite-languages.component';
+import { ProjectsSectionComponent } from './projects-section/projects-section.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { FavoriteLanguagesComponent } from './favorite-languages/favorite-langua
     CertificationsComponent,
     PublicationsComponent,
     FavoriteToolsComponent,
-    FavoriteLanguagesComponent
+    FavoriteLanguagesComponent,
+    ProjectsSectionComponent
   ],
   imports: [
     BrowserModule,
