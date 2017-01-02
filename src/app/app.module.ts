@@ -10,6 +10,7 @@ import { ExperienceComponent } from './experience/experience.component';
 import { CertificationsComponent } from './certifications/certifications.component';
 import { PublicationsComponent } from './publications/publications.component';
 import { FavoriteToolsComponent } from './favorite-tools/favorite-tools.component';
+import { FavoriteLanguagesComponent } from './favorite-languages/favorite-languages.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { FavoriteToolsComponent } from './favorite-tools/favorite-tools.componen
     ExperienceComponent,
     CertificationsComponent,
     PublicationsComponent,
-    FavoriteToolsComponent
+    FavoriteToolsComponent,
+    FavoriteLanguagesComponent
   ],
   imports: [
     BrowserModule,
