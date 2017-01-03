@@ -1,11 +1,11 @@
 # See http://help.github.com/ignore-files/ for more about ignoring files.
 
 # compiled output
-current_site/dist
-current_site/tmp
+**/dist
+**/tmp
 
 # dependencies
-current_site/node_modules
+**/node_modules
 
 # IDEs and editors
 /.idea
@@ -23,17 +23,17 @@ current_site/node_modules
 !.vscode/extensions.json
 
 # misc
-current_site/.sass-cache
-current_site/connect.lock
-current_site/coverage/*
-current_site/libpeerconnection.log
-current_site/npm-debug.log
-current_site/testem.log
-current_site/typings
+**/.sass-cache
+**/connect.lock
+**/coverage/*
+**/libpeerconnection.log
+**/npm-debug.log
+**/testem.log
+**/typings
 
 # e2e
-current_site/e2e/*.js
-current_site/e2e/*.map
+**/e2e/*.js
+**/e2e/*.map
 
 #System Files
 .DS_Store
