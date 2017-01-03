@@ -1,199 +1,32 @@
 <h4 class="text-muted">Projects:</h4>
-
 <div class="wrapper">
-<div id="main" class="main">
-  <div id="items" class="row-fluid">
+  <div id="main" class="main">
+    <div id="items" class="row-fluid">
 
-    <div class="item masonry-brick">
-      <div class="picture">
-        <a class="image" title="Go to Budget Party on Heroku" href="https://budgetparty.herokuapp.com/">
-          <img src="../assets/img/budgetparty_1.png" alt="Budget Party">
-        </a>
-        <div class="item-content">
-          <div>
-            <h4>Budget Party</h4>
-          </div>
-          <div class="description">
-            <p> A simple budgeting app written in elixir (based on erlang) using the phoenix framework. Feel free make a login and check it out on heroku.</p>
-          </div>
-          <div class="meta">
-            <span>
-              <a href="https://github.com/zieka/budgetparty">Github</a>
+      <div *ngFor="let project of projects" class="item masonry-brick">
+        <div class="picture">
+          <a class="{{project.mediaType}}" title="{{project.title}}" href="{{project.href}}">
+            <img *ngIf="project.mediaType === 'image'" src="{{project.source}}" alt="{{project.imgAlt}}">
+            <video *ngIf="project.mediaType === 'video'" controls="controls">
+              <source src="{{project.source}}" type="video/mp4" />
+            </video>
+          </a>
+          <div class="item-content">
+            <div>
+              <h4>{{project.name}}</h4>
+            </div>
+            <div class="description" id="project{{project.id}}">
+            </div>
+            <div class="meta">
+              <span *ngFor="let link of project.links">
+              <a href="{{link.href}}">{{link.name}}</a>
             </span>
-            <span>
-              <a href="https://budgetparty.herokuapp.com/">Heroku</a>
-            </span>
+            </div>
           </div>
         </div>
       </div>
+      
     </div>
-
-    <div class="item masonry-brick">
-      <div class="picture">
-        <a class="image" title="Go to Predictive Text on ShinyApp" href="https://zieka.shinyapps.io/computational_linguistics">
-          <img src="../assets/img/predictive_text_1.png" alt="Predictive Text">
-        </a>
-        <div class="item-content">
-          <div>
-            <h4>Predictive Text</h4>
-          </div>
-          <div class="description">
-            <p> This is a predictive text app written in R using computational
-              linguistics (n-gram model) and deployed as a Shinyapp.
-              Documentation can be found in the slide presentation and
-              github repo.</p>
-          </div>
-          <div class="meta">
-            <span>
-              <a href="https://zieka.shinyapps.io/computational_linguistics">ShinyApp</a>
-            </span>
-            <span>
-              <a href="http://rpubs.com/zieka/text_prediction">Slide Presentation</a>
-            </span>
-            <span>
-              <a href="https://github.com/zieka/computational_linguistics">Github</a>
-            </span>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="item masonry-brick">
-      <div class="picture">
-        <a class="image" title="Go to Recipe Finder on Heroku" href="http://recipefinder-scullykns.herokuapp.com/">
-          <img src="../assets/img/recipe_finder_1.png" alt="Recipe Finder">
-        </a>
-        <div class="item-content">
-          <div>
-            <h4>Recipe Finder</h4>
-          </div>
-          <div class="description">
-            <p> This is an app written in ruby using the rails framework
-              which utilized the food2fork api.  Head on over and find
-              something good to cookup. </p>
-          </div>
-          <div class="meta">
-            <span>
-              <a href="https://github.com/zieka/recipefinder">Github</a>
-            </span>
-            <span>
-              <a href="http://recipefinder-scullykns.herokuapp.com/">Heroku</a>
-            </span>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="item masonry-brick">
-      <div class="picture">
-        <a class="image" title="Go to Esty Data on ShinyApp" href="https://zieka.shinyapps.io/etsy_data/">
-          <img src="../assets/img/etsy_1.png" alt="Etsy Data">
-        </a>
-        <div class="item-content">
-          <div>
-            <h4>Esty Data</h4>
-          </div>
-          <div class="description">
-            <p> I built a scraper using import.io to build a sample dataset
-              of stores on etsy.com.  This app is written in R and deployed
-              using Shinyapp and will allow you to filter the dataset and
-              perform k-means clustering in realtime.</p>
-          </div>
-          <div class="meta">
-            <span>
-              <a href="https://zieka.shinyapps.io/etsy_data/">ShinyApp</a>
-            </span>
-            <span>
-              <a href="https://github.com/zieka/etsy_data">Github</a>
-            </span>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="item masonry-brick">
-      <div class="picture">
-        <a class="image" title="Go to XML Extractor on Github.io" href="http://zieka.github.io/xml_extractor/">
-          <img src="../assets/img/xml_extractor_1.png" alt="XML Extractor">
-        </a>
-        <div class="item-content">
-          <div>
-            <h4>XML Extractor</h4>
-          </div>
-          <div class="description">
-            <p> Single page webapp I made to help co-workers extract xml
-              requests when they are contructed in vbscript files.  To try
-              it out copy the example script and paste it into the app.</p>
-          </div>
-          <div class="meta">
-            <span>
-              <a href="http://zieka.github.io/xml_extractor/">Github.io</a>
-            </span>
-            <span>
-              <a href="../assets/examples/xml_extractor_vbscript_example">Example</a>
-            </span>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="item masonry-brick">
-      <div class="picture">
-        <a class="image" title="Go to the USB-X Product Information" href="http://blackdiamondvideo.com/products/usb-x/">
-          <img src="../assets/img/usb-x.jpg" alt="USB-X">
-        </a>
-        <div class="item-content">
-          <div>
-            <h4>USB-X</h4>
-          </div>
-          <div class="description">
-            <p> Managed retrofit and deployment of USB-X, IP-based USB
-              switching device. </p>
-                <ul>
-                  <li>handled scheduling with hospitals and internal resources</li>
-                  <li>contributing to internal procurement discussions</li>
-                  <li>creating diagrams and documentation</li>
-                  <li>debugging the product</li>
-                  <li>automate testing and deployment</li>
-                  <li>escalated support for the device.</li>
-                </ul>
-          </div>
-          <div class="meta">
-            <span>
-              <a href="http://blackdiamondvideo.com/wp-content/uploads/2013/12/USB-X-Data-Sheet.pdf">Datasheet</a>
-            </span>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="item masonry-brick">
-      <div class="picture">
-        <a class="video" title="Touchless LMM">
-          <video controls="controls">
-            <source src="../assets/video/lmm_gesture.mp4" type="video/mp4" />
-          </video>
-        </a>
-        <div class="item-content">
-          <div>
-            <h4>Touchless LMM</h4>
-          </div>
-          <div class="description">
-            <p> This was a working protoype I made of a touchless control
-              system to allow surigcal staff to change layouts on an 8MP
-              monitor from within the sterile field.  It was really fun to
-              see the outstanding reaction in person when demoed at the AORN
-              Surgical Conference 2014 in Chicago.</p>
-          </div>
-          <div class="meta">
-          </div>
-        </div>
-      </div>
-    </div>
-
-
-
+    <div class="clearfix"></div>
   </div>
-  <div class="clearfix"></div>
-</div>
 </div>
