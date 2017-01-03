@@ -12,9 +12,8 @@
   <p>
     Here are some places you can find out much more about me:
   </p>
-  <a title ="Linkedin - More about my resume" href="https://www.linkedin.com/in/kylescully"><img width="40" src="../assets/img/linkedin.jpg" alt="Linkedin"></a>
-  <a title ="Github - More about my code" href="https://github.com/zieka"><img width="40" src="../assets/img/github_1.png" alt="Github"></a>
-  <a class="padded-5" title ="Instagram - More about my photography" href="https://www.instagram.com/scullykns"><img width="30" src="../assets/img/instagram_1.png" alt="Instagram"></a>
-  <a class="padded-5" title ="Facebook - More about my friends" href="https://www.facebook.com/kyle.scully.31"><img width="30" src="../assets/img/facebook.png" alt="Facebook"></a>
-  <a title ="Send me an email" href="mailto:scullykns@gmail.com"><img width="40" src="../assets/img/gmail.png" alt="Gmail"></a>
+  <a *ngFor="let link of links" title ="{{link.title}}" href="{{link.href}}"
+    [class.padded-5]="link.imgAlt === 'Instagram' || link.imgAlt === 'Facebook'">
+    <img width="{{link.imgWidth}}" src="{{link.imgSrc}}" alt="{{link.imgAlt}}">
+  </a>
 </div>
