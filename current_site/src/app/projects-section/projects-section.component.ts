@@ -13,7 +13,7 @@ export class ProjectsSectionComponent implements OnInit, AfterViewInit {
       mediaType : 'image',
       title : 'Go to Budget Party on Heroku',
       href : 'https://budgetparty.herokuapp.com/',
-      source : '../assets/img/budgetparty_1.png',
+      source : '../assets/img/budgetparty_1.jpg',
       imgAlt : 'Budget Party',
       name : 'Budget Party',
       description : `A simple budgeting app written in elixir (based on erlang)
@@ -35,7 +35,7 @@ export class ProjectsSectionComponent implements OnInit, AfterViewInit {
       mediaType : 'image',
       title : 'Go to Predictive Text on ShinyApp',
       href : 'https://zieka.shinyapps.io/computational_linguistics',
-      source : '../assets/img/predictive_text_1.png',
+      source : '../assets/img/predictive_text_1.jpg',
       imgAlt : 'Predictive Text',
       name : 'Predictive Text',
       description : `This is a predictive text app written in R using computational
@@ -62,7 +62,7 @@ export class ProjectsSectionComponent implements OnInit, AfterViewInit {
       mediaType : 'image',
       title : 'Go to Recipe Finder on Heroku',
       href : 'http://recipefinder-scullykns.herokuapp.com/',
-      source : '../assets/img/recipe_finder_1.png',
+      source : '../assets/img/recipe_finder_1.jpg',
       imgAlt : 'Recipe Finder',
       name : 'Recipe Finder',
       description : `This is an app written in ruby using the rails framework
@@ -84,7 +84,7 @@ export class ProjectsSectionComponent implements OnInit, AfterViewInit {
       mediaType : 'image',
       title : 'Go to Esty Data on ShinyApp',
       href : 'https://zieka.shinyapps.io/etsy_data/',
-      source : '../assets/img/etsy_1.png',
+      source : '../assets/img/etsy_1.jpg',
       imgAlt : 'Etsy Data',
       name : 'Etsy Data',
       description : `I built a scraper using import.io to build a sample dataset
@@ -107,7 +107,7 @@ export class ProjectsSectionComponent implements OnInit, AfterViewInit {
       mediaType : 'image',
       title : 'Go to XML Extractor on Github.io',
       href : 'http://zieka.github.io/xml_extractor/',
-      source : '../assets/img/xml_extractor_1.png',
+      source : '../assets/img/xml_extractor_1.jpg',
       imgAlt : 'XML Extractor',
       name : 'XML Extractor',
       description : `Single page webapp I made to help co-workers extract xml

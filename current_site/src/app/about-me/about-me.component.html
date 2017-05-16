@@ -12,8 +12,10 @@
   <p>
     Here are some places you can find out much more about me:
   </p>
-  <a *ngFor="let link of links" title ="{{link.title}}" href="{{link.href}}"
-    [class.padded-5]="link.imgAlt === 'Instagram' || link.imgAlt === 'Facebook'"
+  <a *ngFor="let link of links"
+    title ="{{link.title}}"
+    href="{{link.href}}"
+    class="link-icon"
     style="text-decoration: none">
     <img width="{{link.imgWidth}}" src="{{link.imgSrc}}" alt="{{link.imgAlt}}">
   </a>
