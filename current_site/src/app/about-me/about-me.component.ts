@@ -3,11 +3,11 @@ import { Component, OnInit } from '@angular/core';
 @Component({
   selector: 'app-about-me',
   templateUrl: './about-me.component.html',
-  styleUrls: ['./about-me.component.css']
+  styleUrls: ['./about-me.component.scss']
 })
 export class AboutMeComponent implements OnInit {
 
-  private links = [
+  public links = [
     {
       title : 'Linkedin - More about my resume',
       href : 'https://www.linkedin.com/in/kylescully',

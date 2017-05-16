@@ -3,11 +3,11 @@ import { Component, OnInit, AfterViewInit} from '@angular/core';
 @Component({
   selector: 'app-projects-section',
   templateUrl: './projects-section.component.html',
-  styleUrls: ['./projects-section.component.css']
+  styleUrls: ['./projects-section.component.scss']
 })
 export class ProjectsSectionComponent implements OnInit, AfterViewInit {
 
-  private projects = [
+  public projects = [
     {
       id : 1,
       mediaType : 'image',
