@@ -1,6 +1,5 @@
 export const projects = [
   {
-    id : 1,
     mediaType : 'image',
     title : 'Go to Superion Styleguide',
     href : 'https://superion-styleguide.herokuapp.com/',
@@ -16,7 +15,6 @@ export const projects = [
     ]
   },
   {
-    id : 2,
     mediaType : 'image',
     title : 'Go to Budget Party on Heroku',
     href : 'https://budgetparty.herokuapp.com/',
@@ -38,7 +36,6 @@ export const projects = [
     ]
   },
   {
-    id : 3,
     mediaType : 'image',
     title : 'Go to Predictive Text on ShinyApp',
     href : 'https://zieka.shinyapps.io/computational_linguistics',
@@ -65,7 +62,6 @@ export const projects = [
     ]
   },
   {
-    id : 4,
     mediaType : 'image',
     title : 'Go to Recipe Finder on Heroku',
     href : 'http://recipefinder-scullykns.herokuapp.com/',
@@ -87,7 +83,6 @@ export const projects = [
     ]
   },
   {
-    id : 5,
     mediaType : 'image',
     title : 'Go to Esty Data on ShinyApp',
     href : 'https://zieka.shinyapps.io/etsy_data/',
@@ -110,7 +105,6 @@ export const projects = [
     ]
   },
   {
-    id : 6,
     mediaType : 'image',
     title : 'Go to XML Extractor on Github.io',
     href : 'http://zieka.github.io/xml_extractor/',
@@ -132,7 +126,6 @@ export const projects = [
     ]
   },
   {
-    id : 7,
     mediaType : 'image',
     title : 'Go to the USB-X Product Information',
     href : 'http://blackdiamondvideo.com/products/usb-x/',
@@ -156,7 +149,6 @@ export const projects = [
     ]
   },
   {
-    id : 8,
     mediaType : 'video',
     title : 'Touchless LMM',
     source : '../assets/video/lmm_gesture.mp4',

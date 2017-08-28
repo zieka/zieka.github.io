@@ -1,4 +1,4 @@
-import { Component, OnInit, AfterViewInit} from '@angular/core';
+import { Component, OnInit} from '@angular/core';
 import { projects } from './projects';
 
 @Component({
@@ -6,7 +6,7 @@ import { projects } from './projects';
   templateUrl: './projects-section.component.html',
   styleUrls: ['./projects-section.component.scss']
 })
-export class ProjectsSectionComponent implements OnInit, AfterViewInit {
+export class ProjectsSectionComponent implements OnInit {
 
   public projects = projects;
 
@@ -14,13 +14,6 @@ export class ProjectsSectionComponent implements OnInit, AfterViewInit {
 
   ngOnInit() {
 
-  }
-
-  ngAfterViewInit() {
-    this.projects.forEach((project) => {
-      let elem = document.getElementById('project' + project.id);
-      elem.innerHTML = project.description;
-    });
   }
 
 }

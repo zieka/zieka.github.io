@@ -1,9 +1,8 @@
 <h4 class="text-muted">Projects:</h4>
 <div class="wrapper">
   <div id="main" class="main">
-    <div id="items" class="row-fluid">
-
-      <div *ngFor="let project of projects" class="item masonry-brick">
+    <div id="items" class="masonry">
+      <div *ngFor="let project of projects" class="masonry__item">
         <div class="picture">
           <a class="{{project.mediaType}}" title="{{project.title}}" href="{{project.href}}">
             <img *ngIf="project.mediaType === 'image'" src="{{project.source}}" alt="{{project.imgAlt}}">
@@ -11,11 +10,11 @@
               <source src="{{project.source}}" type="video/mp4" />
             </video>
           </a>
-          <div class="item-content">
+          <div class="project">
             <div>
-              <h4>{{project.name}}</h4>
+              <div class="project__title">{{project.name}}</div>
             </div>
-            <div class="description" id="project{{project.id}}">
+            <div class="description" [innerHTML]="project.description">
             </div>
             <div class="meta">
               <span *ngFor="let link of project.links">
@@ -25,8 +24,6 @@
           </div>
         </div>
       </div>
-      
     </div>
-    <div class="clearfix"></div>
   </div>
 </div>
