@@ -1,0 +1,32 @@
+<h4 class="text-muted">Projects:</h4>
+<div class="wrapper">
+  <div id="main" class="main">
+    <div id="items" class="row-fluid">
+
+      <div *ngFor="let project of projects" class="item masonry-brick">
+        <div class="picture">
+          <a class="{{project.mediaType}}" title="{{project.title}}" href="{{project.href}}">
+            <img *ngIf="project.mediaType === 'image'" src="{{project.source}}" alt="{{project.imgAlt}}">
+            <video *ngIf="project.mediaType === 'video'" controls="controls">
+              <source src="{{project.source}}" type="video/mp4" />
+            </video>
+          </a>
+          <div class="item-content">
+            <div>
+              <h4>{{project.name}}</h4>
+            </div>
+            <div class="description" id="project{{project.id}}">
+            </div>
+            <div class="meta">
+              <span *ngFor="let link of project.links">
+              <a href="{{link.href}}">{{link.name}}</a>
+            </span>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+    </div>
+    <div class="clearfix"></div>
+  </div>
+</div>
