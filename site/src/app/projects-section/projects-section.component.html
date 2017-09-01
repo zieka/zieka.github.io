@@ -1,15 +1,16 @@
-<h4 class="text-muted">Projects:</h4>
-<div class="wrapper">
-  <div id="main" class="main">
+<h4 class="section-title">Projects:</h4>
+
     <div id="items" class="masonry">
       <div *ngFor="let project of projects" class="masonry__item">
         <div class="picture">
-          <a class="{{project.mediaType}}" title="{{project.title}}" href="{{project.href}}">
-            <img *ngIf="project.mediaType === 'image'" src="{{project.source}}" alt="{{project.imgAlt}}">
-            <video *ngIf="project.mediaType === 'video'" controls="controls">
+          <a *ngIf="project.mediaType === 'image'" class="{{project.mediaType}}" title="{{project.title}}" href="{{project?.href || 'javascript:void(0)'}}">
+            <img src="{{project.source}}" alt="{{project.imgAlt}}">
+          </a>
+          <span *ngIf="project.mediaType === 'video'" class="{{project.mediaType}}">
+            <video controls="controls">
               <source src="{{project.source}}" type="video/mp4" />
             </video>
-          </a>
+          </span>
           <div class="project">
             <div>
               <div class="project__title">{{project.name}}</div>
@@ -25,5 +26,3 @@
         </div>
       </div>
     </div>
-  </div>
-</div>
