@@ -3,7 +3,18 @@ import 'rxjs/add/operator/switchMap';
 import 'rxjs/add/operator/debounceTime';
 import { Observable } from 'rxjs/Observable';
 import { ReplaySubject } from 'rxjs/ReplaySubject';
-import { Directive, ElementRef, EventEmitter, Input, NgZone, Output, OnChanges, AfterContentInit, OnDestroy } from '@angular/core';
+import {
+  Directive,
+  ElementRef,
+  EventEmitter,
+  Input,
+  NgZone,
+  Output,
+  OnChanges,
+  AfterContentInit,
+  OnDestroy,
+  SimpleChanges
+} from '@angular/core';
 import { getScrollListener } from './scroll-listener';
 import { lazyLoadImage } from './lazyload-image';
 
@@ -41,7 +52,7 @@ export class LazyLoadImageDirective implements OnChanges, AfterContentInit, OnDe
         this.propertyChanges$ = new ReplaySubject();
     }
 
-    ngOnChanges(e?: any) {
+    ngOnChanges(changes?: SimpleChanges) {
         this.propertyChanges$.next({
             lazyLoad: this.lazyLoad,
             defaultImage: this.defaultImage,
