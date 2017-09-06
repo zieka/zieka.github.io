@@ -3,7 +3,7 @@ export const projects = [
     mediaType : 'image',
     title : 'Go to Superion Styleguide',
     href : 'https://superion-styleguide.herokuapp.com/',
-    source : '../assets/img/superion_1.png',
+    source : '../assets/img/superion_1.jpg',
     imgAlt : 'Superion Styleguide',
     name : 'Superion Styleguide',
     description : `An interactive styleguide for building Superion Applications.  Includes code scaffolding, style guidelines, and web components.`,
