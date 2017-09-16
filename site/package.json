@@ -12,7 +12,7 @@
     "e2e": "protractor",
     "sw": "sw-precache --root=dist --config=sw-precache-config.js",
     "pre-dist": "rm -rf ../assets; rm -f ../favicon.ico; rm -f ../index.html; rm -f ../*.bundle.*; rm -f ../sw-precache-config.js",
-    "dist": "npm run pre-dist; rm -rf dist; ng build --prod; ii; cp -r ./dist/* ../;rm -rf dist"
+    "dist": "npm run pre-dist; rm -rf dist; ng build --prod --aot=true; npm run sw; cp -r ./dist/* ../;rm -rf dist"
   },
   "private": true,
   "dependencies": {
