@@ -16,7 +16,7 @@
   </p>
   <a *ngFor="let link of links"
     title ="{{link.title}}"
-    href="{{link.href}}"
+    href="{{webPFileExtension(link.href)}}"
     class="link-icon"
     style="text-decoration: none">
     <img width="{{link.imgWidth}}" src="{{link.imgSrc}}" alt="{{link.imgAlt}}">
