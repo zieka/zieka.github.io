@@ -4,7 +4,7 @@
       <div *ngFor="let project of projects" class="masonry__item">
         <div class="picture">
           <a *ngIf="project.mediaType === 'image'" class="{{project.mediaType}}" title="{{project.title}}" href="{{project?.href || 'javascript:void(0)'}}">
-            <img [defaultImage]="defaultImage" [errorImage]="errorImage" [lazyLoad]="project.source" [offset]="offset" alt="{{project.imgAlt}}">
+            <img [defaultImage]="defaultImage" [errorImage]="errorImage" [lazyLoad]="webPFileExtension(project.source)" [offset]="offset" alt="{{project.imgAlt}}">
           </a>
           <span *ngIf="project.mediaType === 'video'" class="{{project.mediaType}}">
             <video controls="controls">
