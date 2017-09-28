@@ -3,7 +3,7 @@ export const projects = [
     mediaType : 'image',
     title : 'Go to Superion Styleguide',
     href : 'https://superion-styleguide.herokuapp.com/',
-    source : '../assets/img/superion_1.jpg',
+    source : '../assets/img/superion.webp',
     imgAlt : 'Superion Styleguide',
     name : 'Superion Styleguide',
     description : `An interactive styleguide for building Superion Applications.  Includes code scaffolding, style guidelines, and web components.`,
@@ -18,7 +18,7 @@ export const projects = [
     mediaType : 'image',
     title : 'Go to Budget Party on Heroku',
     href : 'https://budgetparty.herokuapp.com/',
-    source : '../assets/img/budgetparty_1.jpg',
+    source : '../assets/img/budgetparty.webp',
     imgAlt : 'Budget Party',
     name : 'Budget Party',
     description : `A simple budgeting app written in elixir (based on erlang)
@@ -39,7 +39,7 @@ export const projects = [
     mediaType : 'image',
     title : 'Go to Predictive Text on ShinyApp',
     href : 'https://zieka.shinyapps.io/computational_linguistics',
-    source : '../assets/img/predictive_text_1.jpg',
+    source : '../assets/img/predictive_text.webp',
     imgAlt : 'Predictive Text',
     name : 'Predictive Text',
     description : `This is a predictive text app written in R using computational
@@ -65,7 +65,7 @@ export const projects = [
     mediaType : 'image',
     title : 'Go to Recipe Finder on Heroku',
     href : 'http://recipefinder-scullykns.herokuapp.com/',
-    source : '../assets/img/recipe_finder_1.jpg',
+    source : '../assets/img/recipe_finder.webp',
     imgAlt : 'Recipe Finder',
     name : 'Recipe Finder',
     description : `This is an app written in ruby using the rails framework
@@ -86,7 +86,7 @@ export const projects = [
     mediaType : 'image',
     title : 'Go to Esty Data on ShinyApp',
     href : 'https://zieka.shinyapps.io/etsy_data/',
-    source : '../assets/img/etsy_1.jpg',
+    source : '../assets/img/etsy.webp',
     imgAlt : 'Etsy Data',
     name : 'Etsy Data',
     description : `I built a scraper using import.io to build a sample dataset
@@ -108,7 +108,7 @@ export const projects = [
     mediaType : 'image',
     title : 'Go to XML Extractor on Github.io',
     href : 'http://zieka.github.io/xml_extractor/',
-    source : '../assets/img/xml_extractor_1.jpg',
+    source : '../assets/img/xml_extractor.webp',
     imgAlt : 'XML Extractor',
     name : 'XML Extractor',
     description : `Single page webapp I made to help co-workers extract xml
@@ -129,7 +129,7 @@ export const projects = [
     mediaType : 'image',
     title : 'Go to the USB-X Product Information',
     href : 'http://blackdiamondvideo.com/products/usb-x/',
-    source : '../assets/img/usb-x.jpg',
+    source : '../assets/img/usb-x.webp',
     imgAlt : 'USB-X',
     name : 'USB-X',
     description : `Managed retrofit and deployment of USB-X, IP-based USB switching device.
