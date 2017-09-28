@@ -9,9 +9,9 @@ import { projects } from './projects';
 export class ProjectsSectionComponent implements OnInit {
 
   public projects = projects;
-  public defaultImage = '../assets/img/400x400.png';
+  public defaultImage = '../assets/img/400x400.webp';
   public offset = 100;
-  public errorImage = '../assets/img/error.png';
+  public errorImage = '../assets/img/error.webp';
 
   constructor() {}
 
