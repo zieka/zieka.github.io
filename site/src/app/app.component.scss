@@ -1,21 +1,22 @@
 .header{
   height: 8em;
 }
-.name{
+.logo{
   position: absolute;
-  top: 3em;
-  left: calc(50% - 53px);
   color: black;
-  > h3{
-    text-transform: uppercase;
-  }
+  top: 3.15em;
+  left: calc(50% - 1.75em);
+  opacity: .9;
+  z-index: -1;
 }
 .box{
   position: absolute;
   background: rgba(103, 155, 204, 0.09);
   width: calc(100% - 15px);
   height: 8em;
-  max-width: 750px;
+  max-width: 8em;
+  left: calc(50% - 4em);
+  border-radius: 50%;
 }
 .b0{
   animation: b0-resize 7s infinite alternate both;
@@ -65,4 +66,9 @@
 @keyframes b6-resize {
   0% { transform: scale(.3, .9);}
   100% { transform: scale(.8, .2);}
+}
+.name {
+  font-size: 1.25em;
+  font-weight: 600;
+  margin-top: 1em;
 }
