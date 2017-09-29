@@ -1,5 +1,6 @@
 import { Component, OnInit} from '@angular/core';
 import { projects } from './projects';
+import {determineWebPSupport, webPFileExtension} from '../helpers/webp';
 
 @Component({
   selector: 'app-projects-section',
@@ -15,36 +16,15 @@ export class ProjectsSectionComponent implements OnInit {
   public supportsWebP = false;
 
   constructor() {
-    this. supportsWebP = this.determineWebPSupport();
+    this.supportsWebP = determineWebPSupport();
   }
 
   ngOnInit() {
   }
 
-  /**
-   * Check browser for webp support
-   * @return {boolean} if webp is supported returns true
-   */
-  private determineWebPSupport(): boolean {
-    const elem = document.createElement('canvas');
-
-    if (!!(elem.getContext && elem.getContext('2d'))) {
-      // was able or not to get WebP representation
-      return elem.toDataURL('image/webp').indexOf('data:image/webp') === 0;
-    } else {
-      // very old browser like IE 8, canvas not supported
-      return false;
-    }
-  }
-
-  /**
-   * If browser supports webp then change file extensions to webp
-   * @param  {string} str the file path with original extension
-   * @return {string}     the file path to asset
-   */
-  public webPFileExtension( str: string ): string {
+  public handleFileExtension( str: string ): string {
     if (this.supportsWebP) {
-      return str.split(/\.(?=[^.]*$)/)[0] + '.webp';  // regex: split the string on last period
+      return webPFileExtension(str);
     } else {
       return str;
     }
