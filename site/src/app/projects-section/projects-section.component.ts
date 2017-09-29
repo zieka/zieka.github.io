@@ -1,6 +1,6 @@
-import { Component, OnInit} from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { projects } from './projects';
-import {determineWebPSupport, webPFileExtension} from '../helpers/webp';
+import { determineWebPSupport, webPFileExtension } from '../helpers/webp';
 
 @Component({
   selector: 'app-projects-section',

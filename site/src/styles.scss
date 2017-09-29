@@ -4,27 +4,8 @@ body {
   font-weight: 400;
   background-color: white;
 }
-.main-content{
-  max-width: 760px;
-  margin: 10px auto;
-}
-.name{
-  text-align: center;
-}
 .indented {
   padding-left: 10px;
-}
-
-.picture img {
-    height: auto;
-    width: 100%;
-}
-
-.picture video {
-  height: auto;
-  width: calc(100% + .5px);
-  border-top-left-radius: 3px;
-  border-top-right-radius: 3px;
 }
 
 .section-title {

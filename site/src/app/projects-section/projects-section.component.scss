@@ -36,6 +36,18 @@ $dropshadow: 0 4px 5px 0 rgba(0,0,0,.14),0 1px 10px 0 rgba(0,0,0,.12),0 2px 4px 
   padding-bottom: 10px;
 }
 
+.picture img {
+    height: auto;
+    width: 100%;
+}
+
+.picture video {
+  height: auto;
+  width: calc(100% + .5px);
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+}
+
 @media only screen and (min-width: 400px) {
     .masonry {
         -moz-column-count: 2;
