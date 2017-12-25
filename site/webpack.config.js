@@ -15,6 +15,8 @@ const customProperties = require('postcss-custom-properties');
 const { NoEmitOnErrorsPlugin, EnvironmentPlugin, HashedModuleIdsPlugin } = require('webpack');
 const { BaseHrefWebpackPlugin, SuppressExtractedTextChunksWebpackPlugin } = require('@angular/cli/plugins/webpack');
 const { CommonsChunkPlugin, ModuleConcatenationPlugin } = require('webpack').optimize;
+const { PurifyPlugin } = require('@angular-devkit/build-optimizer');
+
 const { LicenseWebpackPlugin } = require('license-webpack-plugin');
 const { AngularCompilerPlugin } = require('@ngtools/webpack');
 
@@ -977,7 +979,7 @@ module.exports = {
       "additionalPackages": [],
       "pattern": /^(MIT|ISC|BSD.*)$/
     }),
-    // new PurifyPlugin(),
+    new PurifyPlugin(),
     new AngularCompilerPlugin({
       "mainPath": "main.ts",
       "platform": 0,

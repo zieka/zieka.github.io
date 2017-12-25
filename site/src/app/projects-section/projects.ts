@@ -1,12 +1,31 @@
 export const projects = [
   {
+    mediaType: 'image',
+    title: 'Go to Bonsai UI',
+    href: 'http://bonsai-ui.com/',
+    source: '../assets/img/bonsaiui.jpg',
+    imgAlt: 'Bonsai UI',
+    name: 'Bonsai UI',
+    description: `Bonsai UI is lightweight css toolkit that focuses on keeping things simple by starting small.  Built using React.`,
+    links: [
+      {
+        name: 'Bonsai-UI.com',
+        href: 'http://bonsai-ui.com/'
+      },
+      {
+        name: 'Github',
+        href: 'https://github.com/zieka/bonsai-ui'
+      }
+    ]
+  },
+  {
     mediaType : 'image',
     title : 'Go to Superion Styleguide',
     href : 'https://superion-styleguide.herokuapp.com/',
     source : '../assets/img/superion.jpg',
     imgAlt : 'Superion Styleguide',
     name : 'Superion Styleguide',
-    description : `An interactive styleguide for building Superion Applications.  Includes code scaffolding, style guidelines, and web components.`,
+    description : `An interactive styleguide for building Superion Applications.  Includes code scaffolding, style guidelines, and web components.  Built using Angular 2+`,
     links : [
       {
         name: 'Heroku',
