@@ -1,11 +1,13 @@
 const fs = require('fs');
 const path = require('path');
+const glob = require('globby');
 const CopyWebpackPlugin = require('copy-webpack-plugin');
 const ProgressPlugin = require('webpack/lib/ProgressPlugin');
 const CircularDependencyPlugin = require('circular-dependency-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const PreloadWebpackPlugin = require('preload-webpack-plugin');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
+const PurifyCSSPlugin = require('purifycss-webpack');
 const UglifyJsPlugin = require('uglifyjs-webpack-plugin');
 const autoprefixer = require('autoprefixer');
 const postcssUrl = require('postcss-url');
@@ -927,6 +929,18 @@ module.exports = {
       "filename": "[name].[contenthash:20].bundle.css"
     }),
     new SuppressExtractedTextChunksWebpackPlugin(),
+    new PurifyCSSPlugin({
+      paths: glob.sync([
+        path.join(__dirname, 'src/app/**/*.html'),
+      ]),
+      moduleExtensions: [],
+      minimize: true,
+      verbose: false,
+      purifyOptions: {
+        whitelist: [],
+        rejected: false
+      }
+    }),
     new EnvironmentPlugin({
       "NODE_ENV": "production"
     }),
