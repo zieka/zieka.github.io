@@ -11,7 +11,7 @@ export class ProjectsSectionComponent implements OnInit {
 
   public projects = projects;
   public defaultImage = '../assets/img/400x400.png';
-  public offset = 200;
+  public offset = 100;
   public errorImage = '../assets/img/error.png';
   public supportsWebP = false;
 
