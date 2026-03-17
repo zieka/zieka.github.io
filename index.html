@@ -7,6 +7,20 @@
   <link rel="canonical" href="https://zieka.vercel.app/">
 </head>
 <body>
+  <script>
+    if ('serviceWorker' in navigator) {
+      navigator.serviceWorker.getRegistrations().then(function(registrations) {
+        registrations.forEach(function(registration) {
+          registration.unregister();
+        });
+      });
+      caches.keys().then(function(names) {
+        names.forEach(function(name) {
+          caches.delete(name);
+        });
+      });
+    }
+  </script>
   <p><a href="https://zieka.vercel.app/">https://zieka.vercel.app/</a></p>
 </body>
 </html>
