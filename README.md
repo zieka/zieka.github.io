@@ -1,2 +1,0 @@
-# zieka.github.io
-Pages
